@@ -27,8 +27,8 @@ firstNumber = null; secondNumber = null;
 numberMeans.arithmeticMean = (numbers.firstNumber + numbers.secondNumber)/2;
 console.log("Średnia arytmetyczna wynosi: ", numberMeans.arithmeticMean);
 
-numberMeans.geometricMean = firstNumber*secondNumber;
-console.log("Średnia geometryczna wynosi (''błędna''): ", numberMeans.geometricMean);
+numberMeans.geometricMean = Math.sqrt(numbers.firstNumber*numbers.secondNumber);
+console.log("Średnia geometryczna wynosi: ", numberMeans.geometricMean);
 
 numberMeans.harmonicMean = (2*numbers.firstNumber*numbers.secondNumber)/(numbers.firstNumber + numbers.secondNumber);
 console.log("Średnia harmoniczna wynosi: ", numberMeans.harmonicMean);
